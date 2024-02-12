@@ -1,0 +1,8 @@
+#+title: Notes Index
+#+author: Will McDonald
+#+date: <2024-02-12 Mon>
+#+description: Index for all my notes
+
+
+* Notes
+[[id:eda03d10-96e5-4891-8abf-115222c7b730][Magnetism]]
