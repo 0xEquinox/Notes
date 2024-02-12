@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       6ec85437-df51-4884-9ca2-17d1b7f014a7
+:END:
+#+title: Riemann Sums
+#+author: Will McDonald
+#+date: 2024-02-02
+#+description: Notes for calc riemann sums
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+
+* [[id:6ec85437-df51-4884-9ca2-17d1b7f014a7][Riemann Sums]]
+Riemann sums can be used to approximate the area under a curve, or the interval in fancy math language. It works by summing the areas of rectangles to fill the approximate area under a curve.
+** Left Riemann Sum
+Gives an underestimate of the integral when f(x) is increasing, and an overestimate when f(x) is decreasing.
+** Right Riemann Sums
+Gives an overestimate of the integral when f(x) is increasing and an underestimate when f(x) is decreasing.
+** Middle Riemann Sums
+Gives a middle approximation, which is ideal, but it's way more work that is really not important for an approximation.

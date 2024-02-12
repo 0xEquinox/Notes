@@ -1,0 +1,82 @@
+:PROPERTIES:
+:ID:       eda03d10-96e5-4891-8abf-115222c7b730
+:END:
+
+#+title: Magnetism
+#+author: Will McDonald
+#+date: 2024-02-01
+#+description: Notes for physics 2 Magnetism
+#+tags: physics school classnotes
+#+options: num:nil
+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+
+* Direction
++ Reversing the direction of a battery reverses the direction of the current
+  + This changes the voltage of the battery, which changes the electric field
++ To power a lightbulb with a magnet, the magnet must be moving, which changes the electric field
++ The charges and the magnetic field are directly related, if one reverses direction, so will the other.
+
+* Three Ways to generate electricity
+1. Moving a magnet back and forth through a coil of wire to convert kinetic energy into electrical energy
+2. Switch the voltage of a battery back and forth
+3. Move a battery through a coil of wire to convert kinetic energy to electric energy (like a magnet)
+** Almost all ways of electricity generation rely on spinning a turbine, which changes a magnetic field that generates electricity.
++ With the exception of solar panels
+
+* Electric Field Strength
++ Measured in Teslas (like the guy)
+  + $T = N/m/s$
++ In an equation an electric field is B
++ The electric field strength is directly related the current in the wire
+  + Insert equation here
++ The electric field strength is inversely related to the distance away from the magnet
+  + Insert equation here: TODO
++ The ease of creating a magnetic field is the permeability of free space
+  + Insert value here
+
+* Right Hand Rule
++ Thumb points up for current
++ The magnetic field is my other 4 fingers
++ The force is the palm facing outward
+
+* Magnetic Force on Moving Charge and Wires
+** Equation for magnetic force
+The magnetic force depends on the strength of the magnetic field, the velocity of the particle, and the charge of the particle. It also depends on the angle between the direction of the field and the direction of motion of a particle. Note: **A particle moving in the same direction as the magnetic field will have no magentic force acting on it.** Therefore, the force will ollicilate, at angle 0, there is no force and at angle 90 most of the force is going straight to the object so force will be highest. We can use this equation ($\sin \theta$ is not important at $90^{\circ}$ angle): \[ F_m = qv(\sin \theta)B \]
+** The Magnetic Force on a Conducting Wire
+When we want to find the force for lots of wires it's impracticle to use the equation above (because there are billions of charges), and most of the parcticle applications of magnetic fields use more than one charge or more than one stream of charges. Instead we can rework a kinematics equation to get this equation, which is the magnetic force for a current carrying wire: \[ F_m = Il(\sin \theta)B\]
+*** Two Parallel Wires
+Use the [[Right Hand Rule][Right Hand Rule]] to find the direction of the field of the first wire, then do the same for the second wire, mark the image with Xs and Os to visualize. Then go back to the first wire and do the first [[Right Hand Rule][Right Hand Rule]] to find the direction of the force and do the same for the second wire to find whether they are attracted or repelled from each other. We can solve for this algebreically with these equations (remember B is field strength measured in Teslas):
+ + \[ B_1 = \frac{u_0 I_1}{2 \pi r}\]
+ + \[ F_M = BI_2l\]
+ + \[ F_M = I_2l\frac{u_0I_1}{2\pi r}\]
+
+
+* Induced Current in Electromagnetic Force
+    A metal rod placed in an electromagnetic field is moved right, which causes the charges in the rod to move down for positive charges, and up for negative charges.
+** Do they ever stop moving?
+    Yes the will stop moving after the charges pile on either side of the rod, which will repell the other charges from moving down as well. This difference between either side creates a voltage this called an **Induced Voltage**. In order to keep the electrons/charges moving there has to be some kind of change in the magnetic field.
+** Electro Motive Force
+    The electro motive force is not actually a force, but is caused by balaencing of the forces in a magnetic field. This is an induced voltage by the movement of a conductor through a magnetic field: $F_E = F_M$ After a whole lot of steps the equation for the Electro Motive Force is simply (epsilon (\epsilon) is the symbol for emf): \[ \epsilon = Blv\]
+** Four Ways to Turn on a Lightbulb with magnets
+    Key takeaway: **A change in the magnetic field is required to generate electricity**.
+    + Moving the light bulb horizontally through the field, provided that some part of the coil of wire is outisde the magnetic field
+    + Rotating the lightbulb in the field
+    + Flipping the magnets
+    + Making the magnetic field stronger and/or weaker
+** What does not turn the light bulb on?
+    + The lightbulb doesn't turn on when it's being moved vertically because vertical movement causes no change in the magnetic field, which is required to generate a current.
+** Magnetic Flux
+Magnetic flux is the total magnetic field passing through an area. The stronger the field the more magnetic flux there is. Magnetic field uses the symbol $\phi$ and is measured in a unit called webers (wee-b-ers). The equation for magnetic flux is (when not at an angle the $\cos(\theta)$ will cancle out): \[ \phi = B\cos(\theta)A\]
++ The greatest magnetic flux will be when the face of the area is parralel to the magnetic field
++ The least magnetic flux will be when the face of the are is perpendicular to the magnetic field
+*** Lenz's Law
+Allows us to determine the direction of the current in a loop induced by changing magnetic flux (it's about the change in magnetic flux).
+**** How to use it:
+1) Start with the right thumb pointing in the direction of the magnetic field.
+2) Determine if the flux is increasing or decreasing.
+3) If the flux is increasing, point your thumb in the opposite direction (of the field), and curl your fingers to show the direction of current in a loop.
+4) If the flux is decreasing, simply curl your fingers to show the direction of current in a loop.
+**** Example:
+We can see Lenz's law in action when a magnet is dropped through a copper pipe. The magnet does not fall quickly, but actually slowly floats down like a feather. The current bellow the magnet as it falls is against the magnet, pushing up and curernt above is with the magnet pulling it up, which slows the fall of the magnet.
+*** Faraday's Law
+...

@@ -1,0 +1,169 @@
+:PROPERTIES:
+:ID:       ac0d6fbb-0f1a-4bed-801d-fa12a690e723
+:END:
+#+title: Brave New World
+#+author: Will McDonald
+#+date: 2024-02-04
+#+options: num:nil
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+description: Notes on Brave New World by Aldous Huxley
+
+* Characters
+| Character | Synopsis                                                                           |
+|-----------+------------------------------------------------------------------------------------|
+| Director  | Oversees the production of humans in the World State and promotes social stability |
+| Lenina    | Hatchery worker who becomes interested in Bernard and later John                   |
+| Bernard   | Alpha-Plus who feels alienated from society due to physical differences            |
+| Linda     | Woman from the World State stranded on the Savage Reservation with her son John    |
+| John      | Raised on the Savage Reservation, rejects the values of the World State            |
+
+* Quotes
+| Speaker       | Chapter | Quote                                                                                               | Analysis                                                                                          |
+|---------------+---------+-----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------|
+| Director      |       1 | "Community, Identity, Stability."                                                                   | Reflects the World State's core values prioritizing social stability over individuality.          |
+| Mustapha Mond |       3 | "But I don't want comfort. I want God, I want poetry, I want real danger, I want freedom."          | Highlights the conflict between individual desires for deeper meaning and societal control.       |
+| John          |       8 | "O brave new world that has such people in it."                                                     | John's ironic and disillusioned reaction upon witnessing the shallow society of the World State.  |
+| John          |       8 | "But I don't want comfort. I want God, I want poetry, I want real danger, I want freedom."          | Reiteration of John's rejection of the World State's superficial comforts for deeper experiences. |
+| Mustapha Mond |       8 | "Actual happiness always looks pretty squalid in comparison with the overcompensations for misery." | Reflects the World State's belief in sacrificing genuine happiness for stability.                 |
+| Bernard Marx  |       8 | "Don't take that horrible stuff. It's poison, it's poison."                                         | Bernard's outburst against soma, symbolizing his rebellion against societal conditioning.         |
+| John          |       8 | "I want God's concentration. I don't want to be the victim of His moods."                           | Expresses John's longing for a deeper connection with spirituality and a sense of purpose.        |
+
+
+* Chapters
+** <2024-02-06> Chapters 1-4
+*** Discussion Questions
+1) How does the Bokanovsky Process contribute to the theme of dehumanization in the World State?
+2) In what ways does the World State's conditioning of its citizens reflect real-world societal norms and expectations?
+3) What is the significance of individuality and identity in the novel, considering characters like Bernard who struggle with conformity?
+*** Chapter 1: The Central London Hatchery and Conditioning Centre
+  - Setting: Central London Hatchery and Conditioning Centre
+  - Time: a.f. 632
+  - Characters:
+    - The Director of Hatcheries and Conditioning
+    - Students
+    - Henry Foster
+    - Lenina Crowne
+  - Introduction to World State's Reproduction Process:
+    - Ovaries produce ova, fertilized artificially, and incubated in bottles
+    - Caste system: Alpha, Beta, Gamma, Delta, Epsilon
+    - Bokanovsky Process: Shocking eggs to produce up to 96 identical embryos
+    - Podsnap’s Technique: Accelerating egg ripening, producing thousands of siblings
+  - Gestation Process:
+    - Embryos incubated for 267 days
+    - Decanting: Birth process
+    - Conditioning during gestation: Mimicking womb conditions, familiarizing with movement
+    - Sterilization of female fetuses
+    - Different treatments based on castes and future roles
+  - Themes and Analysis:
+    - Critique of overenthusiastic embrace of scientific discoveries
+    - Technology-based society depicted as dystopia
+    - Satirical portrayal of technology as a quasi-religious tool
+    - Emphasis on social stability through predestination and conditioning
+    - Parallel between human production and assembly line manufacturing
+    - Differentiation between higher and lower castes in terms of individuality and creativity
+*** Chapter 2: The Nurseries and Conditioning Techniques
+  - Location: The Nurseries at the Central London Hatchery and Conditioning Centre
+  - Techniques:
+    - Neo-Pavlovian Conditioning:
+      - Presentation of books and flowers to infants
+      - Alarming response to discourage attraction to books and flowers
+      - Repetition to instill instinctive hatred of books and flowers
+    - Conditioning for Economic Consumption:
+      - Transformation of attitudes towards nature and transportation
+      - Hatred for countryside but love for country sports requiring elaborate apparatus
+      - Strategy to increase consumption of goods through manufactured sports
+    - Hypnopaedia:
+      - Discovery of sleep teaching or hypnopaedia
+      - Uselessness for intellectual training but effectiveness for moral training
+      - Implementation in the World State for moralizing and socializing
+  - Story of Reuben:
+    - Introduction of Reuben, whose parents spoke Polish
+    - Discovery of hypnopaedia after Reuben recited a speech in his sleep
+    - Uselessness of hypnopaedia for intellectual training
+    - Utilization for moral training
+  - Elementary Class Consciousness:
+    - Introduction of sleep lessons for Beta children
+    - Reinforcement of class distinctions and prejudices
+    - Repetition of lessons for moralizing and socializing
+  - Analysis:
+    - Abuse of biological and psychological sciences for citizen conditioning
+    - Pavlovian-inspired techniques to ensure conformity and obedience
+    - Economic agenda behind conditioning to promote consumption and productivity
+    - Elimination of individuality to serve the interests of the community and economy
+*** Chapter 3: The Garden and Introductions
+  - Setting: The garden at the Central London Hatchery and Conditioning Centre
+  - Activities:
+    - Observation of children's games involving complicated machines
+    - Encounter with a distressed child during erotic play
+    - Introduction of Mustapha Mond, Resident Controller for Western Europe
+  - Mustapha Mond's Speech:
+    - Critique of historical perspectives and the World State's control over education
+    - Comparison of emotional control to water under pressure
+    - Description of pre-World State chaos and instability
+    - Introduction of soma as a solution to social problems
+  - Changing Room Conversations:
+    - Henry Foster's discussion with the Assistant Predestinator about Lenina and a feely
+    - Bernard Marx's reaction to the conversation and offer of soma
+    - Lenina's conversation with Fanny Crowne about pregnancy substitutes, dating, and Bernard's invitation
+  - Analysis:
+    - Illustration of the World State's control over sexuality and social behavior
+    - Bernard Marx's role as a dissenter and misfit within the society
+    - Importance of conformity and surveillance in maintaining social order
+    - Elimination of traditional institutions like family and marriage to prevent instability
+    - Emphasis on consumption and the commodification of individuals
+    - Manipulation of historical knowledge to maintain power and control
+*** Chapter 4: Bernard's Discomfort and Rebellion
+  - Setting: Central London Hatchery and Conditioning Centre
+  - Events:
+    - Lenina's acceptance of Bernard's invitation to the Savage Reservation
+    - Bernard's embarrassment and insecurity in public
+    - Bernard's visit to Helmholtz Watson, expressing dissatisfaction with the status quo
+  - Analysis:
+    - Bernard's struggle with social norms and feelings of alienation
+    - Introduction of Helmholtz Watson as a fellow dissenter
+    - Examination of societal conformity and the role of soma in maintaining contentment
+** <2024-02-09> Chapters 5-9
+*** Discussion Questions
+1) How does the Savage Reservation serve as a foil to the society of the World State, and what does it reveal about human nature?
+2) Analyze the role of technology in shaping the society depicted in Brave New World, and its implications for personal freedom and autonomy.
+3) Consider the concept of happiness as presented in the novel. How is happiness defined and achieved in the World State, and what are its limitations?
+4) Discuss the portrayal of religion and spirituality in the novel, particularly through the character of John and his rejection of the World State's values.
+*** Chapter 5: Leisure and Solidarity Service
+  - Setting: Various locations including the crematorium and Solidarity Service venue
+  - Events:
+    - Lenina and Henry's leisure activities, including soma consumption and a sex orgy
+    - Bernard's participation in Solidarity Service and subsequent isolation
+  - Analysis:
+    - Illustration of leisure activities and consumption patterns in the World State
+    - Solidarity Service as a ritual reinforcing social cohesion and conformity
+    - Bernard's increasing alienation and discomfort within society
+*** Chapter 6: Bernard's Retreat and Realization
+  - Setting: Helicopter trip, Bernard's apartment, Director's office, Savage Reservation
+  - Events:
+    - Bernard's refusal to take soma and subsequent confrontation with Lenina
+    - Bernard's contemplation of individuality and subsequent decision to visit the Savage Reservation
+    - Bernard's confrontation with the Director and realization of his impending exile
+  - Analysis:
+    - Bernard's internal struggle between conformity and rebellion
+    - Introduction of the Savage Reservation as a contrasting environment
+    - Exploration of societal control mechanisms and consequences for dissenters
+*** Chapter 7: A Clash of Cultures
+- **Setting:** The Savage Reservation
+- **Events:**
+  - Lenina and Bernard witness a shocking community celebration involving ritualistic self-harm.
+  - They meet John, who speaks perfect English and reveals his upbringing by his mother, Linda, from the World State.
+  - John introduces them to Linda, who shares her story of being stranded on the Reservation.
+- **Analysis:**
+  - Contrast between the cultures of the Reservation and the World State.
+  - Introduction of John and Linda, pivotal characters representing the clash of societies.
+  - Exploration of identity and belonging in the face of cultural displacement.
+*** Chapter 8: John's Background**
+- **Setting:** The Reservation and John's dwelling
+- **Events:**
+  - John recounts his childhood, raised by Linda amidst the traditions and rejection of the Reservation.
+  - Linda's struggles with assimilation and substance abuse on the Reservation.
+  - John's immersion in Shakespeare and his yearning to explore the Other World.
+- **Analysis:**
+  - Development of John's character, torn between two worlds and seeking his identity.
+  - Examination of Linda's difficulties adapting to the Reservation's harsh reality.
+  - Introduction of John's longing for the World State and his eventual decision to journey there with Bernard.

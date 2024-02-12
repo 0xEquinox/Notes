@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       e5df6b3f-d90c-455c-8cf9-0b42bd2ffcc1
+:END:
+#+title: HackPNW
+#+author: Will McDonald
+#+date: 2024-02-04
+#+options: num:nil
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+description: HackPNW Planning Notes and Todos
+
+* Things that need doing
+** TODO Send follow up emails
+<2024-02-05>

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       5ec76c4c-0ce4-4f1a-bfb5-79593a6203af
+:END:
+#+title: Graphs
+#+author: Will McDonald
+#+date:<2024-01-31 [[file:~/.config/doom/config.el:::if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+author: Will McDonald\n#+date:<%<%Y-%m-%d>>#+description: ")]]>#+description:  
+
+
+
+*

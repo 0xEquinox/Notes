@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-02-08 Thu 12:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Magnetism</title>
+<meta name="author" content="Will McDonald" />
+<meta name="description" content="Notes for physics 2 Magnetism" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Magnetism</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org4883653">Direction</a></li>
+<li><a href="#org550998d">Three Ways to generate electricity</a>
+<ul>
+<li><a href="#org73399c6">Almost all ways of electricity generation rely on spinning a turbine, which changes a magnetic field that generates electricity.</a></li>
+</ul>
+</li>
+<li><a href="#orgcf7b6c6">Electric Field Strength</a></li>
+<li><a href="#orga1a5e44">Right Hand Rule</a></li>
+<li><a href="#org0d21e95">Magnetic Force on Moving Charge and Wires</a>
+<ul>
+<li><a href="#org41913de">Equation for magnetic force</a></li>
+<li><a href="#orgdd5ba0b">The Magnetic Force on a Conducting Wire</a>
+<ul>
+<li><a href="#org82424cd">Two Parallel Wires</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org3accd19">Induced Current in Electromagnetic Force</a>
+<ul>
+<li><a href="#orgb9a39f6">Do they ever stop moving?</a></li>
+<li><a href="#org3798c1c">Electro Motive Force</a></li>
+<li><a href="#orgad23eaa">Four Ways to Turn on a Lightbulb with magnets</a></li>
+<li><a href="#org9448bfa">What does not turn the light bulb on?</a></li>
+<li><a href="#org19de8f1">Magnetic Flux</a>
+<ul>
+<li><a href="#org6a45dc7">Lenz&rsquo;s Law</a></li>
+<li><a href="#org108b8f5">Faraday&rsquo;s Law</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+SETUPFILE: <a href="https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup">https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup</a>
+</p>
+<div id="outline-container-org4883653" class="outline-2">
+<h2 id="org4883653">Direction</h2>
+<div class="outline-text-2" id="text-org4883653">
+<ul class="org-ul">
+<li>Reversing the direction of a battery reverses the direction of the current
+<ul class="org-ul">
+<li>This changes the voltage of the battery, which changes the electric field</li>
+</ul></li>
+<li>To power a lightbulb with a magnet, the magnet must be moving, which changes the electric field</li>
+<li>The charges and the magnetic field are directly related, if one reverses direction, so will the other.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org550998d" class="outline-2">
+<h2 id="org550998d">Three Ways to generate electricity</h2>
+<div class="outline-text-2" id="text-org550998d">
+<ol class="org-ol">
+<li>Moving a magnet back and forth through a coil of wire to convert kinetic energy into electrical energy</li>
+<li>Switch the voltage of a battery back and forth</li>
+<li>Move a battery through a coil of wire to convert kinetic energy to electric energy (like a magnet)</li>
+</ol>
+</div>
+<div id="outline-container-org73399c6" class="outline-3">
+<h3 id="org73399c6">Almost all ways of electricity generation rely on spinning a turbine, which changes a magnetic field that generates electricity.</h3>
+<div class="outline-text-3" id="text-org73399c6">
+<ul class="org-ul">
+<li>With the exception of solar panels</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcf7b6c6" class="outline-2">
+<h2 id="orgcf7b6c6">Electric Field Strength</h2>
+<div class="outline-text-2" id="text-orgcf7b6c6">
+<ul class="org-ul">
+<li>Measured in Teslas (like the guy)
+<ul class="org-ul">
+<li>\(T = N/m/s\)</li>
+</ul></li>
+<li>In an equation an electric field is B</li>
+<li>The electric field strength is directly related the current in the wire
+<ul class="org-ul">
+<li>Insert equation here</li>
+</ul></li>
+<li>The electric field strength is inversely related to the distance away from the magnet
+<ul class="org-ul">
+<li>Insert equation here: TODO</li>
+</ul></li>
+<li>The ease of creating a magnetic field is the permeability of free space
+<ul class="org-ul">
+<li>Insert value here</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga1a5e44" class="outline-2">
+<h2 id="orga1a5e44">Right Hand Rule</h2>
+<div class="outline-text-2" id="text-orga1a5e44">
+<ul class="org-ul">
+<li>Thumb points up for current</li>
+<li>The magnetic field is my other 4 fingers</li>
+<li>The force is the palm facing outward</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0d21e95" class="outline-2">
+<h2 id="org0d21e95">Magnetic Force on Moving Charge and Wires</h2>
+<div class="outline-text-2" id="text-org0d21e95">
+</div>
+<div id="outline-container-org41913de" class="outline-3">
+<h3 id="org41913de">Equation for magnetic force</h3>
+<div class="outline-text-3" id="text-org41913de">
+<p>
+The magnetic force depends on the strength of the magnetic field, the velocity of the particle, and the charge of the particle. It also depends on the angle between the direction of the field and the direction of motion of a particle. Note: <b><b>A particle moving in the same direction as the magnetic field will have no magentic force acting on it.</b></b> Therefore, the force will ollicilate, at angle 0, there is no force and at angle 90 most of the force is going straight to the object so force will be highest. We can use this equation (\(\sin \theta\) is not important at \(90^{\circ}\) angle): \[ F_m = qv(\sin \theta)B \]
+</p>
+</div>
+</div>
+<div id="outline-container-orgdd5ba0b" class="outline-3">
+<h3 id="orgdd5ba0b">The Magnetic Force on a Conducting Wire</h3>
+<div class="outline-text-3" id="text-orgdd5ba0b">
+<p>
+When we want to find the force for lots of wires it&rsquo;s impracticle to use the equation above (because there are billions of charges), and most of the parcticle applications of magnetic fields use more than one charge or more than one stream of charges. Instead we can rework a kinematics equation to get this equation, which is the magnetic force for a current carrying wire: \[ F_m = Il(\sin \theta)B\]
+</p>
+</div>
+<div id="outline-container-org82424cd" class="outline-4">
+<h4 id="org82424cd">Two Parallel Wires</h4>
+<div class="outline-text-4" id="text-org82424cd">
+<p>
+Use the <a href="#orga1a5e44">Right Hand Rule</a> to find the direction of the field of the first wire, then do the same for the second wire, mark the image with Xs and Os to visualize. Then go back to the first wire and do the first <a href="#orga1a5e44">Right Hand Rule</a> to find the direction of the force and do the same for the second wire to find whether they are attracted or repelled from each other. We can solve for this algebreically with these equations (remember B is field strength measured in Teslas):
+</p>
+<ul class="org-ul">
+<li>\[ B_1 = \frac{u_0 I_1}{2 \pi r}\]</li>
+<li>\[ F_M = BI_2l\]</li>
+<li>\[ F_M = I_2l\frac{u_0I_1}{2\pi r}\]</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org3accd19" class="outline-2">
+<h2 id="org3accd19">Induced Current in Electromagnetic Force</h2>
+<div class="outline-text-2" id="text-org3accd19">
+<p>
+A metal rod placed in an electromagnetic field is moved right, which causes the charges in the rod to move down for positive charges, and up for negative charges.
+</p>
+</div>
+<div id="outline-container-orgb9a39f6" class="outline-3">
+<h3 id="orgb9a39f6">Do they ever stop moving?</h3>
+<div class="outline-text-3" id="text-orgb9a39f6">
+<p>
+Yes the will stop moving after the charges pile on either side of the rod, which will repell the other charges from moving down as well. This difference between either side creates a voltage this called an <b><b>Induced Voltage</b></b>. In order to keep the electrons/charges moving there has to be some kind of change in the magnetic field.
+</p>
+</div>
+</div>
+<div id="outline-container-org3798c1c" class="outline-3">
+<h3 id="org3798c1c">Electro Motive Force</h3>
+<div class="outline-text-3" id="text-org3798c1c">
+<p>
+The electro motive force is not actually a force, but is caused by balaencing of the forces in a magnetic field. This is an induced voltage by the movement of a conductor through a magnetic field: \(F_E = F_M\) After a whole lot of steps the equation for the Electro Motive Force is simply (epsilon (&epsilon;) is the symbol for emf): \[ \epsilon = Blv\]
+</p>
+</div>
+</div>
+<div id="outline-container-orgad23eaa" class="outline-3">
+<h3 id="orgad23eaa">Four Ways to Turn on a Lightbulb with magnets</h3>
+<div class="outline-text-3" id="text-orgad23eaa">
+<p>
+Key takeaway: <b><b>A change in the magnetic field is required to generate electricity</b></b>.
+</p>
+<ul class="org-ul">
+<li>Moving the light bulb horizontally through the field, provided that some part of the coil of wire is outisde the magnetic field</li>
+<li>Rotating the lightbulb in the field</li>
+<li>Flipping the magnets</li>
+<li>Making the magnetic field stronger and/or weaker</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9448bfa" class="outline-3">
+<h3 id="org9448bfa">What does not turn the light bulb on?</h3>
+<div class="outline-text-3" id="text-org9448bfa">
+<ul class="org-ul">
+<li>The lightbulb doesn&rsquo;t turn on when it&rsquo;s being moved vertically because vertical movement causes no change in the magnetic field, which is required to generate a current.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org19de8f1" class="outline-3">
+<h3 id="org19de8f1">Magnetic Flux</h3>
+<div class="outline-text-3" id="text-org19de8f1">
+<p>
+Magnetic flux is the total magnetic field passing through an area. The stronger the field the more magnetic flux there is. Magnetic field uses the symbol \(\phi\) and is measured in a unit called webers (wee-b-ers). The equation for magnetic flux is (when not at an angle the \(\cos(\theta)\) will cancle out): \[ \phi = B\cos(\theta)A\]
+</p>
+<ul class="org-ul">
+<li>The greatest magnetic flux will be when the face of the area is parralel to the magnetic field</li>
+<li>The least magnetic flux will be when the face of the are is perpendicular to the magnetic field</li>
+</ul>
+</div>
+<div id="outline-container-org6a45dc7" class="outline-4">
+<h4 id="org6a45dc7">Lenz&rsquo;s Law</h4>
+<div class="outline-text-4" id="text-org6a45dc7">
+<p>
+Allows us to determine the direction of the current in a loop induced by changing magnetic flux (it&rsquo;s about the change in magnetic flux).
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="orga9b17f5"></a>How to use it:<br />
+<div class="outline-text-5" id="text-orga9b17f5">
+<ol class="org-ol">
+<li>Start with the right thumb pointing in the direction of the magnetic field.</li>
+<li>Determine if the flux is increasing or decreasing.</li>
+<li>If the flux is increasing, point your thumb in the opposite direction (of the field), and curl your fingers to show the direction of current in a loop.</li>
+<li>If the flux is decreasing, simply curl your fingers to show the direction of current in a loop.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgf518c58"></a>Example:<br />
+<div class="outline-text-5" id="text-orgf518c58">
+<p>
+We can see Lenz&rsquo;s law in action when a magnet is dropped through a copper pipe. The magnet does not fall quickly, but actually slowly floats down like a feather. The current bellow the magnet as it falls is against the magnet, pushing up and curernt above is with the magnet pulling it up, which slows the fall of the magnet.
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org108b8f5" class="outline-4">
+<h4 id="org108b8f5">Faraday&rsquo;s Law</h4>
+<div class="outline-text-4" id="text-org108b8f5">
+<p>
+&#x2026;
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2024-02-01</p>
+<p class="author">Author: Will McDonald</p>
+<p class="date">Created: 2024-02-08 Thu 12:43</p>
+</div>
+</body>
+</html>

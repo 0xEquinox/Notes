@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       ea3b4667-43db-4dcf-8b1c-f0b6b1160c49
+:END:
+#+title: Integrals
+#+author: Will McDonald
+#+date: 2024-02-02
+#+setupfile: ~/Documents/org-html-themes/org/theme-readtheorg-local.setup
+#+description: Calc AB Integrals
+
+* Properties of Derivatives
+** Sum/Difference Property
+The integral of two functions added or subtracted from each other is the same as the sum or difference of the integral of each function:
+\[ \int_{a}^{b}(f(x) \pm g(x))\,dx = \int_{a}^{b}f(x)\,dx \pm \int_{a}^{b}g(x)\,dx\]
+** Constant Multiple Property
+The integral of a function times constant k, is the same as constant k times the integral of a function:
+\[\int_{a}^{b}k*f(x)\,dx = k * \int_{a}^{b}f(x)\, dx\]
+** Reverse Interval
+An integral from range a to b will be the same, but opposite of an integral that goes from b to a:
+\[\int_a^b f(x)dx=-\int_b^a f(x)dx \]
+** Zero Length Interval
+An integral with a range of zero will be zero:
+\[\int_a^a f(x)dx = 0 \]
+** Adding Interval
+The sum of two integrals with the range a to b and b to c is equal to the integral from range a to c:
+ \[\int_a^b f(x)dx+\int_b^c f(x)dx=\int_a^c f(x)dx \]
+
+* Solving Integrals
+There are two kinds of approaches to solving integrals. Approximations and actually correct answers.
+** Approximations
+*** [[id:6ec85437-df51-4884-9ca2-17d1b7f014a7][Riemann Sums]]
+*** Trapazoidal
+** Exact Solutions

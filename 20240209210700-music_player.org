@@ -1,0 +1,105 @@
+:PROPERTIES:
+:ID:       416c2800-d483-4cc2-9950-c6ecaa3822c7
+:END:
+#+title: Music Player
+#+author: Will McDonald
+#+date: 2024-02-09
+#+options: num:nil
+#+SETUPFILE: ~/Documents/org-html-themes/org/theme-readtheorg-local.setup
+#+description: Notes on my senior project music player
+
+* Components
+** Micro SD
++ Use a micro sd breaker board to give micro sd card access to the micro controller
++ Can connect to a micro controller with an spi interface (this should be lossless)
+** Micro Controller
+Used for controlling everything as the central component
+*** How much processing power?
++ Depends on how high resolution the audio files we want to play are
+*** How does it interface
++ Looks like it should be able to interface with the micro controller using the SPI pins
+*** Different Options
+**** Arduino Nano
+***** Specs
++ ATmega328 micro controller
++ UART, I2C, and SPI Communication
++ 16 MHz processing power
++ Mini usb
+***** Pros
++ Built in DAC
++ 14 interface pins (including an SPI interface for microsd storage)
++ Supports I2C
++ low power consumption
++ small (18mmx45mm)
+***** Cons
++ Somewhat expensive ($25) for what it is
++ Mini USB power
++ No I2S support
++ Only supports 8 bit audio with built in DAC
+**** ESP 32 (series)
+***** Specs
++ 32 bit microprocessor 160 to 240 MHz
++ 448 or 520 KiB of RAM
++ Wifi and Bluetooth
++ SPI, I^2S and I^2C
++ 8 Bit DAC
++ Small
++ Cheap
++ Low power consumption
+***** Pros
++ more than powerful enough
++ support for I^2S
++ Lots of choices
+***** Cons
++ Has more features than needed (wifi, bluetooth, etc.)
+**** RP2040
+***** Specs
++ 32 Bit dual core ARM microcontroller at 133MHz
++ SPI, I^2C
++ 264kb of SRAM
+***** Pros
++ Cheap
++ Low power
++ Lots of choices
+***** Cons
++ No on board DAC
++ No I^2S support
+**** Raspberry Pi Zero 2 (Zero 1 seems to have disappeared)
+***** Specs
++ 1 GHz 64bit quad core
++ 512Mb Ram
++ Bluetooth and WiFi
+***** Pros
++ Supports higher audio quality options
++ can run a whole operating system (This includes then support for spotify and streaming)
++ Storage is built in
++ Fast
++ Popular
+***** Cons
++ Hard to find at lower prices
++ more expensive than a micro controller/procesor
++ Has way more features than required
+** Digital to Analog Converter (DAC)
+Depending on the micro controller, this might be built in. Other wise we will need to add a DAC to the interface with the micro controller. The built in DAC on some micro controller boards may also be at a lower quality (like on an esp32), so it might be worth adding a DAC/Amplifier break out board regardless.
+*** Things to Consider
++ What interface does the dac use to comunicate with the controller?
+    Different DACs use different interaces that will affect the quality of the sound and how the dac communicates with the controller.
++ How many pins does the DAC require?
+*** Interfaces
+**** I^2S
++ Designed Specifically for audio applications for inter ic-sound.
++ Electric serlial pass interface for connecting digitcal audio devices.
++ It communicates with Pulse Code Moduclation (PCM) audio data.
+  + PCM is a method for digitally representing samples in analog signals
+  + It saves the binary values of all the voltage samples of the audio in binary, which is what we want to send
+**** I^2C
++ Not designed for audio specifically
++ Much more common than I2S
++ Doesn't support 16bit audio, only supports up to 12bit
+** Audio Output
+From what I can tell this is pretty simple, just connect a 3.5mm audio jack to the correct output pins on the board and it should work.
+** Display
+The display can connect over the SPI pins on the micro controller just like the micro sd storage.
+*** Things to Consider
+1) Size
+2) Power draw

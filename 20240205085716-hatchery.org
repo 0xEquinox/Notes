@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       6bc36872-ef07-47d6-888d-a3b3336eaeb1
+:END:
+#+title: Hatchery
+#+author: Will McDonald
+#+date: 2024-02-05
+#+options: num:nil
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+description: Brave New World Hatcheries
